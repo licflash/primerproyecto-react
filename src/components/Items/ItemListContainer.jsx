@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import ItemList from './ItemList';
 import useFetch from '../../Hooks/useFetch';
 const ItemListContainer = () => {
-    const [items] = useFetch("https://fakestoreapi.com/products")
+    const [items] = useFetch("https://api.escuelajs.co/api/v1/products")
  
     return (
         <Container>

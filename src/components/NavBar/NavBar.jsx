@@ -6,15 +6,15 @@ import CartWidget from './CartWidget';
 
 const NavBar = ( ) => {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar>
     <Container>
-      <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
+      <Navbar.Brand href="#home">Cocktelería Online</Navbar.Brand>
       <Nav className="me-auto">
         <NavLink className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/">Home</NavLink>
-        <NavLink className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/about">About</NavLink>
-        <NavLink  className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/contact">Contact</NavLink>
-        <NavLink  className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/user">Profile</NavLink>
-        <NavLink  className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/cart">Cart</NavLink>
+        <NavLink className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/novedades">Novedades</NavLink>
+        <NavLink  className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/contact">Contacto</NavLink>
+        <NavLink  className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/user">Perfil</NavLink>
+        <NavLink  className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/cart">Carrito</NavLink>
       </Nav>
     </Container>
     <CartWidget />

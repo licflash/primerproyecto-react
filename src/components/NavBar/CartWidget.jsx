@@ -11,7 +11,7 @@ const CartWidget = () => {
         <div style={style}>
             <UserContext.Consumer>
                 {
-                    ({user}) => <p>Welcome,{ user.name}</p>
+                    ({user}) => <p>¡Hola { user.name}!</p>
                 }
             </UserContext.Consumer>
         </div>
