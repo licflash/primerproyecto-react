@@ -12,9 +12,7 @@ const UserDetail = () => {
   return (
     <div>UserDetail
         <p>Name: {user.name}</p>
-        <p>Age: {user.age}</p>
         <input type='text' value={user.name} onChange={changeName}>
-          
         </input>
     </div>
   )

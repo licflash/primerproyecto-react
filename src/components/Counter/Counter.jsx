@@ -8,7 +8,7 @@ const Counter = ({onAdd}) => {
         setCount(count + 1)
     }
     const decrement = () => {
-        if(count > 1){
+        if(count >= 1){
             setCount(count - 1)
         }
     }
