@@ -8,7 +8,7 @@ const NavBar = ( ) => {
   return (
     <Navbar>
     <Container>
-      <Navbar.Brand href="#home">Cocktelería Online</Navbar.Brand>
+      <Navbar.Brand href="#home">Compra Online</Navbar.Brand>
       <Nav className="me-auto">
         <NavLink className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/">Home</NavLink>
         <NavLink className={( { isActive} ) => isActive ? "link-active navlink" : "navlink"} to="/novedades">Novedades</NavLink>

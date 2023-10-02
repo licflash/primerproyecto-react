@@ -11,7 +11,7 @@ const CardItem = ({ item }) => {
                 <Card.Text>
                     {item.description}
                 </Card.Text>
-                <Link to={`/detalle/<${item.id}>`}>
+                <Link to={`/detalle/${item.id}`}>
                     <Button variant="primary">Ver detalles</Button>
                 </Link>
             </Card.Body>

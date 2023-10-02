@@ -4,7 +4,7 @@ import useFetch from '../../Hooks/useFetch'
 import CartContext from '../../context/cartContext/CartContext';
 
 const ItemDetailContainer = ({ id }) => {
-    const [item] = useFetch(`https://api.escuelajs.co/api/v1/products/<${id}>`);
+    const [item] = useFetch(`https://api.escuelajs.co/api/v1/products/${id}`);
 
     const { addItem } = useContext(CartContext);
 

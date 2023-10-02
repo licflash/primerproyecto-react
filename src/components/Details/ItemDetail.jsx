@@ -7,7 +7,7 @@ const ItemDetail = ({ item, onAdd}) => {
     return (
         <div className={styles.contianer}>
             <h5 className={styles.title} >{item.title}</h5>
-            <img src={item.images} className={styles.image}/>
+            <img src={item.category.image} className={styles.image}/>
             <p>
                 description: {item.description}
             </p>
@@ -15,7 +15,7 @@ const ItemDetail = ({ item, onAdd}) => {
                 Price: {item.price}
             </p>
             <p>
-                category:  {item.category}
+                category:  {item.category.name}
             </p>
             <Counter onAdd={onAdd} />
         </div>
